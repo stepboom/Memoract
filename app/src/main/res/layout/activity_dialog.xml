@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp" android:layout_height="350dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_gravity="center"
+        android:text="HOW TO PLAY"
+        android:textSize="30sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:text="test"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="OK" />
+    </LinearLayout>
+
+
+</LinearLayout>
