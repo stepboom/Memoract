@@ -1,0 +1,119 @@
+BFS(G=(V,E), start)
+{
+	for each v in V
+		d[v] = -1
+	Q <= an empty queue;
+	Q.enqueue(start);
+	d[start] = 0;
+	while(!Q.empty)
+	{
+		u <= Q.dequeue();
+		for each v in adj(u)
+			if(d[v] == -1)
+			{
+				d[v] <= d[u] + 1;
+				Q.enqueue(v);
+			}
+	}
+	return d;
+}
+
+// MEMRISE----------------------------------------------------
+Mem()
+{
+	picture <= 1;
+	pic <= set of number of picture 
+	
+	while(picture <= 7)
+	{
+		while(true)
+		{
+			start <=  random integer 1 to 15;
+			if(pic[i-1] == 0) break;
+		}
+		
+		pic[start-1] <= picture;
+		pathFinding = BFT(G, start);
+		
+		length <= 3;
+		round <= 0;
+		while()
+		{
+			start <=  random int 1 to 15;
+			if(stop != start AND pathFinding >= length AND pic[stop-1] ==0 ) break;
+			round++;
+			if(round > 30)
+			{
+				length--;
+				round = 0;
+			}
+		}
+		picture++;
+	}
+}
+
+// REACT --------------------------------------------------------------
+
+pic = set of number of picture 
+start = interger between 1 to 15
+
+setPos(pathFinding, start)
+{
+	length <= 3;
+	round <= 0;
+	while(true)
+	{
+		end <= random integer 1 to 15;
+		if(stop != start AND pathFinding >= length AND pic[stop-1] ==0 ) break;
+		round++;
+			if(round > 30)
+			{
+				length--;
+				round = 0;
+			}
+	}
+	pic[stop-1] <= 1;
+	return stop;
+}
+
+find5Pos(start)
+{
+	pic[start-1] <= 1;
+	for i = 0 to 4
+	{
+		pathFinding <= BFT(G, start);
+		stop <= setPos(pathFinding, start);
+		start <= stop;
+	}
+}
+
+// HIGH SCORE -------------------------------------------------------------
+seachAndInsert(s, score, n, name)
+{
+	//seach...
+	start <= 0; end = score.length();
+	while(start)
+	{
+		mid <= start + (end-start)/2;
+		if(s == score[mid]) {
+			pos <= mid; break;
+		} else if(s > score[mid]){
+			end <= mid - 1;
+		} else {
+			start <= mid + 1;
+		}
+	}
+	
+	//insert...
+	position <= start;
+	if(position < 5) {
+		for i from 4 to postion
+		{
+			score[i] <= score[i-1];
+			name[i] <= name[i-1];
+		}
+		score[position] <= s;
+		name[position] <= n;
+	}
+}
+
