@@ -6,13 +6,13 @@ Application developed for the elder to improve **their body response** and **mem
 **2. REACTION :** touching game, touch the appeard pictures, for improvement of body response.
 
 ## App Presentation
-https://youtu.be/irm_nJTBdbw
+Link : https://youtu.be/irm_nJTBdbw
 
 ## Developed by
 
-**5730593821 Mr.Supakrit Paoliwat** 
+[**5730593821 Mr.Supakrit Paoliwat**](https://www.github.com/stepboom) 
 
-**5730625221 Mr.Sitthichai Saejia** 
+[**5730625221 Mr.Sitthichai Saejia**](https://www.github.com/tueytoma) 
 
 ## About
 
